@@ -63,14 +63,14 @@ Example:
 .. code-block:: python
 
    # Show the result of a simple bow-tie quad
-   import poly_point_isect
+   import ml_isect_segments_bentley_ottmann.poly_point_isect
    poly = (
        (1.0, 0.0),
        (0.0, 1.0),
        (0.0, 0.0),
        (1.0, 1.0),
    )
-   isect = poly_point_isect.isect_polygon(poly)
+   isect = ml_isect_segments_bentley_ottmann.poly_point_isect.isect_polygon(poly)
    print(isect)
    # [(0.5, 0.5)]
 

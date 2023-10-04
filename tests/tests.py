@@ -23,7 +23,7 @@ TEST_DATA_PATH = os.path.join(os.path.dirname(__file__), "data")
 sys.path.append(POLY_ISECT_MODULE_PATH)
 sys.path.append(TEST_DATA_PATH)
 
-import poly_point_isect
+import ml_isect_segments_bentley_ottmann.poly_point_isect
 
 # ----------------------------------------------------------------------------
 # SVG Support
@@ -86,12 +86,12 @@ def segments_rotate(s, angle):
 
 
 def isect_segments(s):
-    ret = poly_point_isect.isect_segments(s)
+    ret = ml_isect_segments_bentley_ottmann.poly_point_isect.isect_segments(s)
     return tuple(sorted(set(ret)))
 
 
 def isect_segments__naive(s):
-    ret = poly_point_isect.isect_segments__naive(s)
+    ret = ml_isect_segments_bentley_ottmann.poly_point_isect.isect_segments__naive(s)
     return tuple(sorted(set(ret)))
 
 
